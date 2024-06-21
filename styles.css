@@ -1,4 +1,4 @@
-body, html {
+body {
     height: 100%;
     margin: 0;
     background-color: rgb(189, 225, 122);
@@ -10,10 +10,6 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 90vh;
-}
-
-#myCanvas {
-    background-color: #41cbee;
 }
 
 #noButton {
