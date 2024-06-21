@@ -1,4 +1,4 @@
-body {
+body, html {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,11 @@ body {
     pointer-events: none;
     transition: transform 0.1s ease;
     z-index: 1000;
+}
+
+.cursor-hover {
+    transform: scale(2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #noButton {
@@ -67,6 +72,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.UIButton .hit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.UIButton:hover .UIButtonOutline,
+.UIButton:hover .solid .inner,
+.UIButton:hover .glow,
+.UIButton:hover .text {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.UIButton:hover .line {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.UIButton:hover .text:nth-child(2) {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+}
+
+.UIButton:hover .text:nth-child(3) {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 @media only screen and (max-width: 320px) and (max-height: 568px) {
