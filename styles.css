@@ -12,6 +12,16 @@ body {
     height: 90vh;
 }
 
+.anime-container {
+    position: relative;
+  }
+  
+  .anime-container .dot{
+    position: absolute;
+    border-radius: 50%;
+    background-color: hsl(184, 89%, 50%);
+  }
+
 #noButton {
     position: relative;
     transition: 0.5s;
