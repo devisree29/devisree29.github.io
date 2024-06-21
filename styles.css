@@ -4,6 +4,19 @@ body {
     align-items: center;
     height: 90vh;
     background-color: rgb(189, 225, 122);
+    cursor: none;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    z-index: 1000;
 }
 
 #noButton {
